@@ -206,3 +206,36 @@ h2 {
   max-height: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
+
+#about {
+  padding: 60px 0;
+}
+
+#about {
+  padding: 60px 0;
+}
+
+#services {
+   padding: 60px 0;
+}
+
+#blog {
+  padding: 60px 0;
+}
+
+.bloglist {
+  position: relative;
+  margin-top: 60px;
+}
+
+.blog-item {
+  position: absolute; 
+  left: 0%; 
+  top: 0px;
+}
+
+.blog-item a {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
