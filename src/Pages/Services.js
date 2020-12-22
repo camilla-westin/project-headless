@@ -9,7 +9,8 @@ class Services extends Component {
 
     componentDidMount() {
         client.getEntries({
-            'content_type' : 'services'
+            'content_type' : 'services',
+            'order' : 'sys.createdAt'
           })
           .then((entries) => {
             this.setState({servicepage: entries.items}) 
