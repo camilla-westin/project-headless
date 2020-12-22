@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Nav from './Components/Nav';
+import Nav from './Components/Nav/Nav';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Services from './Pages/Services';
 import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
 import Footer from './Components/Footer/Footer';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -25,7 +26,5 @@ class App extends Component {
     )
   }
 }
-
-
 
 export default App;
