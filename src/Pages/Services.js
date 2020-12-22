@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
+import client from './Client';
 
 class Services extends Component {
+    constructor() {
+        super()
+        this.state = {servicepage: []}
+    }
+
+    componentDidMount() {
+        client.getEntries({
+            'content_type' : 'services'
+          })
+          .then((entries) => {
+            this.setState({servicepage: entries.items}) 
+          })
+    }
+
     render() {
         return(
             <div id="services">
@@ -10,60 +25,20 @@ class Services extends Component {
                 </div>  
                 <div className="features container">
                     <div className="row">
-                        <div className="col-md-4">
-                            <div className="feature-item">
-                                <i className="fa fa-laptop"></i>
-                                <span>
-                                    <h3>Lorem ipsum</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-                                </span>                                      
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="feature-item">
-                                <i className="fa fa-laptop"></i>
-                                <span>
-                                    <h3>Lorem ipsum</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-                                </span>                                      
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="feature-item">
-                                <i className="fa fa-laptop"></i>
-                                <span>
-                                    <h3>Lorem ipsum</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-                                </span>                                      
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="feature-item">
-                                <i className="fa fa-laptop"></i>
-                                <span>
-                                    <h3>Lorem ipsum</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-                                </span>                                      
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="feature-item">
-                                <i className="fa fa-laptop"></i>
-                                <span>
-                                    <h3>Lorem ipsum</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-                                </span>                                      
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="feature-item">
-                                <i className="fa fa-laptop"></i>
-                                <span>
-                                    <h3>Lorem ipsum</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-                                </span>                                      
-                            </div>
-                        </div>
+                        {this.state.servicepage.map((item) =>{
+                            return (
+                                <div className="col-md-4">
+                                <div className="feature-item">
+                                    <img className="pr-3" src={item.fields.serviceIcon.fields.file.url} alt="" />
+                                    <span>
+                                        <h3>{item.fields.serviceHeading}</h3>
+                                        <p>{item.fields.serviceText}</p>
+                                    </span>                                      
+                                </div>
+                            </div> 
+                            )
+                        }                       
+                    )}                    
                     </div>
                 </div>        
             </div>
