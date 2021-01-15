@@ -9,7 +9,7 @@ class Services extends Component {
 
     componentDidMount() {
         client.getEntries({
-            'content_type' : 'services',
+            content_type : 'services',
             'order' : 'sys.createdAt'
           })
           .then((entries) => {
@@ -26,9 +26,9 @@ class Services extends Component {
                 </div>  
                 <div className="features container">
                     <div className="row">
-                        {this.state.servicepage.map((item) =>{
+                        {this.state.servicepage.map((item, index) =>{
                             return (
-                                <div className="col-md-4">
+                                <div key={index} className="col-md-4">
                                 <div className="feature-item">
                                     <img className="pr-3" src={item.fields.serviceIcon.fields.file.url} alt="" />
                                     <span>
