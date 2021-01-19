@@ -228,8 +228,12 @@ h2 {
   padding: 20px 0 5px;
 }
 
+#servicespage {
+   padding: 40px 0;
+}
+
 #services {
-   padding: 60px 0;
+  padding: 40px 0;
 }
 
 .bloglist {

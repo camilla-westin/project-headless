@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Nav from './Components/Nav/Nav';
 import Home from './Pages/Home';
 import About from './Pages/About';
-import Services from './Pages/Services';
+import ServicesPage from './Pages/ServicesPage';
 import BlogPosts from './Pages/BlogPosts';
 import BlogPost from './Pages/BlogPost';
 import BlogPage from './Pages/BlogPage';
@@ -19,7 +19,7 @@ class App extends Component {
           <Nav />
           <Route exact path="/" component={Home} />
           <Route exact path="/About" component={About} />
-          <Route exact path="/Services" component={Services} />
+          <Route exact path="/Services" component={ServicesPage} />
           <Route exact path="/BlogPosts" component={BlogPosts} />
           <Route exact path="/BlogPosts/:slug" component={BlogPost} />
           <Route exact path="/ContactPage" component={ContactPage} />
