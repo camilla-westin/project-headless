@@ -7,7 +7,7 @@ import Services from './Pages/Services';
 import BlogPosts from './Pages/BlogPosts';
 import BlogPost from './Pages/BlogPost';
 import BlogPage from './Pages/BlogPage';
-import Contact from './Pages/Contact';
+import ContactPage from './Pages/ContactPage';
 import Footer from './Components/Footer/Footer';
 import './App.css';
 
@@ -22,7 +22,7 @@ class App extends Component {
           <Route exact path="/Services" component={Services} />
           <Route exact path="/BlogPosts" component={BlogPosts} />
           <Route exact path="/BlogPosts/:slug" component={BlogPost} />
-          <Route exact path="/Contact" component={Contact} />
+          <Route exact path="/ContactPage" component={ContactPage} />
           <Route exact path="/BlogPage" component={BlogPage} />
           <Footer />
         </div>

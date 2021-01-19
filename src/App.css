@@ -260,6 +260,39 @@ h2 {
   padding: 40px 0;
 }
 
-#contact {
-  padding: 60px 0;
+#contactpage {
+  padding: 40px 0;
+}
+
+#contacts {
+  padding-top: 40px;
+}
+
+.contact-item {
+  margin:
+}
+
+.contact-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-item h2 {
+  font-size: 20px;
+}
+
+.contact-item a {
+  display: block;
+  margin: 3px 0;
+  color: #666666;
+  font-size: 15px;
+}
+
+.contact-item-inner {
+  margin: 12px;
+}
+
+.contact-info {
+  background: #f2f2f2;
+  padding: 20px;;
 }

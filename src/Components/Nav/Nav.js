@@ -25,7 +25,7 @@ class Nav extends Component {
                                 <Link className="nav-link" to="/BlogPage">Blog</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="Contact">Contact</Link>
+                                <Link className="nav-link" to="/ContactPage">Contact us</Link>
                             </li>
                         </ul>
                     </div>
