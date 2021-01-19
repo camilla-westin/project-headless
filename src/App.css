@@ -61,45 +61,44 @@ h2 {
   margin: 0 auto;
 }
 
+#startpage #articles {
+  padding: 40px 0;
+}
+
 .features {
   padding-top: 40px;
 }
 
-#feature {
+#startpage #services {
   background: #f2f2f2;
   padding: 40px 0;
 }
 
-#feature h2 {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.feature-item {
-  padding-bottom: 55px;
+.service-item {
+  padding-bottom: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.feature-item span {
+.service-item span {
   width: 65%;
   padding: 10px 0px 10px 20px;
 }
 
-.feature-item h3 {
+.service-item h3 {
   font-size: 16px;
   color: #666;
   line-height: 24px;
 }
 
-.feature-item p {
+.service-item p {
   font-size: 14px;
   line-height: 16px;
   color: #787878;
 }
 
-.feature-item i {
+.service-item i {
   font-size: 48px;
   height: 110px;
   width: 110px;

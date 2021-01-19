@@ -25,7 +25,7 @@ class Services extends Component {
                         {this.state.servicepage.map((item, index) =>{
                             return (
                                 <div key={index} className="col-md-4">
-                                <div className="feature-item">
+                                <div className="service-item">
                                     <img className="pr-3" src={item.fields.serviceIcon.fields.file.url} alt="" />
                                     <span>
                                         <h3>{item.fields.serviceHeading}</h3>
