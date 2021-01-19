@@ -18,15 +18,9 @@ class About extends Component {
           })
     }
 
-    getParsedMarkdown(heading) {
+    getParsedMarkdown(parsedText) {
         return {
-            __html:marked(heading, {sanitize: true})
-        }
-    }
-
-    getParsedMarkdown(aboutMainBody) {
-        return {
-            __html:marked(aboutMainBody, {sanitize: true})
+            __html:marked(parsedText, {sanitize: true})
         }
     }
  
@@ -34,12 +28,13 @@ class About extends Component {
         return(
             <div id="about">
                 <div className="container">
-                    {/* <h1 className="text-center">{this.state.fields.aboutpage.heading}</h1> */}
-                    <p className="intro"></p>
                     {this.state.aboutpage.length === 0 ? 
                         <div className="pt-5"><img src={BlackLoader} alt="Loader" /></div>
                     :
-                        <div className="main-body" dangerouslySetInnerHTML = {this.getParsedMarkdown(this.state.aboutpage.fields.aboutMainBody)}>
+                        <div>
+                            <h1>{this.state.aboutpage.fields.heading}</h1>
+                            <p className="intro" dangerouslySetInnerHTML = {this.getParsedMarkdown(this.state.aboutpage.fields.aboutPreamble)}></p>
+                            <div className="main-body" dangerouslySetInnerHTML = {this.getParsedMarkdown(this.state.aboutpage.fields.aboutMainBody)}></div>
                         </div>
                     }
                 </div>

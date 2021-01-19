@@ -12,7 +12,7 @@ class Blog extends Component {
             content_type : 'blogPost'
           })
           .then((entries) => {
-            this.setState({blogpage: entries.items}) 
+            this.setState({blogpage: entries.items})          
           })
     }
     render() {
@@ -30,7 +30,7 @@ class Blog extends Component {
                                 <div className="card">
                                     <img className="card-img-top" src={item.fields.picture.fields.file.url} alt="" />         
                                     <div className="card-body">
-                                        <h2 className="card-title"><Link to={`../blogPost/${item.fields.slug}`}>{item.fields.title}</Link></h2>
+                                        <h2 className="card-title"><Link to={`../Blog/${item.fields.slug}`}>{item.fields.title}</Link></h2>
                                         <p className="card-text">{item.fields.description}</p>
                                     </div>
                                 </div>

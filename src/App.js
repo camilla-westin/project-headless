@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Services from './Pages/Services';
 import Blog from './Pages/Blog';
+import BlogPost from './Pages/BlogPost';
 import Contact from './Pages/Contact';
 import Footer from './Components/Footer/Footer';
 import './App.css';
@@ -19,6 +20,7 @@ class App extends Component {
           <Route exact path="/About" component={About} />
           <Route exact path="/Services" component={Services} />
           <Route exact path="/Blog" component={Blog} />
+          <Route exact path="/Blog/:slug" component={BlogPost} />
           <Route exact path="/Contact" component={Contact} />
           <Footer />
         </div>
