@@ -1,31 +1,15 @@
 import React, { Component } from 'react';
-import Slider1 from '../Images/img1.jpg';
-import Slider2 from '../Images/img2.jpg';
 import BlogPosts from './BlogPosts';
 import Services from './Services';
+import StartpageSlideshow from './StartpageSlideshow';
 
 class Home extends Component {
     render() {
         return (
             <div id="startpage">
-                <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">                   
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <img src={Slider1} className="d-block w-100" alt="Computer" />
-                        </div>
-                        <div className="carousel-item">
-                            <img src={Slider2} className="d-block w-100" alt="Computer" />
-                        </div>
-                    </div>
-                    <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </a>
-                    <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </a>
-                </div>
+                
+                <StartpageSlideshow />
+
                 <section id="articles">
                     <h2 className="text-center">Articles</h2>
                     <BlogPosts />

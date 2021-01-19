@@ -196,6 +196,7 @@ h2 {
 }
 
 #portfolio .grid .grid-item:hover { opacity: 1; }
+
 @media screen and (max-width: 1024px) {
 
   #portfolio .grid .grid-item { width: 50%; }
@@ -272,7 +273,7 @@ h2 {
 }
 
 .contact-item {
-  margin:
+  margin: 15px;
 }
 
 .contact-item img {
