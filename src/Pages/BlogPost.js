@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import BlackLoader from '../Images/black-loader.gif';
 import client from './Client';
 import marked from 'marked';
 
@@ -21,9 +22,9 @@ class BlogPost extends Component {
         }       
     }
 
-    getParsedMarkDown(body) {
+    getParsedMarkDown(parsedText) {
         return {
-            _html:marked(body, {sanitize: true})
+            __html:marked(parsedText, {sanitize: true})
         }
     }
 
@@ -35,8 +36,15 @@ class BlogPost extends Component {
         return (              
             <div className="blogpostpage">
                 <div className="container">
-                    <div className="main-body" dangerouslySetInnerHTML = {this.getParsedMarkDown(this.state.blogpostpage.fields.body)}></div>
-                    <button onClick={this.redirectToTarget}>Back</button> 
+                {this.state.blogpostpage.length === 0 ? 
+                        <div className="pt-5"><img src={BlackLoader} alt="Loader" /></div>
+                    :
+                    <div>
+                        <h1>{this.state.blogpostpage.fields.title}</h1>
+                        <div className="main-body" dangerouslySetInnerHTML = {this.getParsedMarkDown(this.state.blogpostpage.fields.body)}></div>
+                        <button onClick={this.redirectToTarget}>Back</button> 
+                    </div>
+                }
                 </div>
             </div>      
         )
