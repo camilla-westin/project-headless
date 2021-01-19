@@ -232,10 +232,6 @@ h2 {
    padding: 60px 0;
 }
 
-#blog {
-  padding: 60px 0;
-}
-
 .bloglist {
   position: relative;
   margin-top: 60px;
@@ -258,6 +254,10 @@ h2 {
 
 #blogpostpage h1 {
   margin: 20px 0 15px 0;
+}
+
+#blogpage {
+  padding: 40px 0;
 }
 
 #contact {

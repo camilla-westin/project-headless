@@ -29,7 +29,7 @@ class BlogPost extends Component {
     }
 
     redirectToTarget = () => {
-        this.props.history.push('/Blog')
+        this.props.history.push('/BlogPage')
     }
 
     render() {  
