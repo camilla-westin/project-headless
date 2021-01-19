@@ -34,12 +34,13 @@ class BlogPost extends Component {
 
     render() {  
         return (              
-            <div className="blogpostpage">
+            <div id="blogpostpage">
                 <div className="container">
                 {this.state.blogpostpage.length === 0 ? 
                         <div className="pt-5"><img src={BlackLoader} alt="Loader" /></div>
                     :
                     <div>
+                        <img src={this.state.blogpostpage.fields.picture.fields.file.url} alt="" />         
                         <h1>{this.state.blogpostpage.fields.title}</h1>
                         <div className="main-body" dangerouslySetInnerHTML = {this.getParsedMarkDown(this.state.blogpostpage.fields.body)}></div>
                         <button onClick={this.redirectToTarget}>Back</button> 

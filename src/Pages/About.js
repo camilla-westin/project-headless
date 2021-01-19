@@ -26,7 +26,7 @@ class About extends Component {
  
     render() {
         return(
-            <div id="about">
+            <div id="aboutpage">
                 <div className="container">
                     {this.state.aboutpage.length === 0 ? 
                         <div className="pt-5"><img src={BlackLoader} alt="Loader" /></div>

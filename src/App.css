@@ -42,9 +42,14 @@
   }
 }
 
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
 h2 {
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 26px;
+  line-height: 30px;
   color: #000;
 }
 
@@ -211,8 +216,16 @@ h2 {
   padding: 60px 0;
 }
 
-#about {
-  padding: 60px 0;
+#aboutpage {
+  padding: 40px 0;
+}
+
+#aboutpage .intro {
+  text-align: left;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+  padding: 20px 0 5px;
 }
 
 #services {
@@ -228,14 +241,23 @@ h2 {
   margin-top: 60px;
 }
 
-.blog-item {
-
-}
-
 .blog-item a {
   font-size: 20px;
   color: #000;
   text-decoration: none;
+}
+
+#blogpostpage {
+  padding: 40px 0;
+}
+
+#blogpostpage img {
+  max-width: 100%;
+  height: auto;
+}
+
+#blogpostpage h1 {
+  margin: 20px 0 15px 0;
 }
 
 #contact {
