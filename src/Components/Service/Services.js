@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import client from './Client';
+import client from '../../Pages/Client';
+import './Services.css';
 
 class Services extends Component {
     constructor() {

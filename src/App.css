@@ -111,7 +111,6 @@ h2 {
   color: #2a9999;
 }
 
-
 #about {
   padding: 60px 0;
 }
@@ -136,67 +135,10 @@ h2 {
   padding: 40px 0;
 }
 
-.bloglist {
-  position: relative;
-  margin-top: 60px;
-}
-
-.blog-item a {
-  font-size: 20px;
-  color: #000;
-  text-decoration: none;
-}
-
-#blogpostpage {
-  padding: 40px 0;
-}
-
-#blogpostpage img {
-  max-width: 100%;
-  height: auto;
-}
-
-#blogpostpage h1 {
-  margin: 20px 0 15px 0;
-}
-
-#blogpage {
-  padding: 40px 0;
-}
-
 #contactpage {
   padding: 40px 0;
 }
 
 #contacts {
   padding-top: 40px;
-}
-
-.contact-item {
-  margin: 15px;
-}
-
-.contact-item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.contact-item h2 {
-  font-size: 20px;
-}
-
-.contact-item a {
-  display: block;
-  margin: 3px 0;
-  color: #666666;
-  font-size: 15px;
-}
-
-.contact-item-inner {
-  margin: 12px;
-}
-
-.contact-info {
-  background: #f2f2f2;
-  padding: 20px;;
 }

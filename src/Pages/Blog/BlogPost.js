@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import BlackLoader from '../Images/black-loader.gif';
-import client from './Client';
+import BlackLoader from '../../Images/black-loader.gif';
+import client from '../Client';
 import marked from 'marked';
+import './Blog.css';
 
 class BlogPost extends Component {
     constructor() {

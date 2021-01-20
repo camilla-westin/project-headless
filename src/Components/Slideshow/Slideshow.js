@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import client from './Client';
+import client from '../../Pages/Client';
 
-class StartpageSlideshow extends Component {
+class Slideshow extends Component {
     constructor() {
         super()
         this.state = {
@@ -41,4 +41,4 @@ class StartpageSlideshow extends Component {
     }
 }
 
-export default StartpageSlideshow
+export default Slideshow

@@ -1,0 +1,27 @@
+.bloglist {
+    position: relative;
+    margin-top: 60px;
+  }
+  
+  .blog-item a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  #blogpostpage {
+    padding: 40px 0;
+  }
+  
+  #blogpostpage img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #blogpostpage h1 {
+    margin: 20px 0 15px 0;
+  }
+  
+  #blogpage {
+    padding: 40px 0;
+  }

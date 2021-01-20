@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import client from './Client';
 import BlackLoader from '../Images/black-loader.gif';
 import marked from 'marked';
-import Services from './Services';
+import Services from '../Components/Service/Services';
  
 class ServicesPage extends Component {
     constructor() {

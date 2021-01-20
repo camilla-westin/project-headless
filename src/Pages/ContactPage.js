@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import client from './Client';
 import BlackLoader from '../Images/black-loader.gif';
 import marked from 'marked';
-import Contacts from './Contacts';
+import Contacts from '../Components/Contact/Contacts';
  
 class ContactPage extends Component {
     constructor() {
