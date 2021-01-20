@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import BlogPosts from './BlogPosts';
 import Services from './Services';
 import StartpageSlideshow from './StartpageSlideshow';
+import Portfolio from '../Components/Portfolio/Portfolio';
 
 class Home extends Component {
     render() {
@@ -18,7 +19,10 @@ class Home extends Component {
                     <h2 className="text-center">Services</h2>                
                     <Services />                      
                 </section>
-                <section id="portfolio">
+
+                <Portfolio />
+
+                {/* <section id="portfolio">
                     <div className="container">
                         <h2>Portfolio</h2>
                         <p className="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
@@ -63,7 +67,7 @@ class Home extends Component {
                             <label for="pic-12" className="grid-item"><img src="http://unsplash.it/400/300?image=24" alt="Dummy" /></label>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </div>
         )
     }
