@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import client from '../../Pages/Client';
+import client from '../../Client';
 
 class Slideshow extends Component {
     constructor() {

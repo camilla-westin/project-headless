@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import client from '../../Pages/Client';
+import client from '../../Client';
 import './Contact.css';
 
 class Contacts extends Component {

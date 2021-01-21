@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import client from './Client';
+import client from '../Client';
 import BlackLoader from '../Images/black-loader.gif';
 import marked from 'marked';
  

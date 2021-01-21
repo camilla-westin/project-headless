@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import client from '../../Pages/Client';
+import client from '../../Client';
 import './Portfolio.css';
 
 class Portfolio extends Component {

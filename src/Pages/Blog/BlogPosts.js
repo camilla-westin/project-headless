@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import client from '../Client';
+import client from '../../Client';
 import {Link} from 'react-router-dom';
 import './Blog.css';
 
